@@ -10,7 +10,7 @@
 * [Copyright](#copyright)
 
 ## Overview
-Weather Journal App is a project that help you to search and get weather tempreture using zip code in most of world countries.
+Weather Journal App is a project that help you to search and get weather temperature using zip code in most of world countries.
 
 when you click on the form button the website will send GET request to openweathermap.org and fetch wether data if found
 
@@ -19,7 +19,7 @@ when you click on the form button the website will send GET request to openweath
 ## Features
 
 * responsive for all devices
-* variable background based on weather tempreture
+* variable background based on weather temperature
 * support many countries
 
 [Back to top](#table-of-contents)

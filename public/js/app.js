@@ -63,7 +63,7 @@ const postData = async (route, data) => {
         body: JSON.stringify({
             date: newDate,
             city: data.name,
-            tempreture: data.main.temp,
+            temperature: data.main.temp,
             feelings: feelings.value
         })
     });
@@ -81,11 +81,11 @@ const getData = async (route) => {
         // Write updated data to DOM elements
         document.querySelector('#date').innerHTML = showData.date;
         document.querySelector('#city').innerHTML = showData.city;
-        tempDegree.innerHTML = Math.round(showData.tempreture) + '°F';
+        tempDegree.innerHTML = Math.round(showData.temperature) + '°F';
         document.querySelector('#content').innerHTML = showData.feelings;
 
         // change background image
-        changeBackground(showData.tempreture);
+        changeBackground(showData.temperature);
 
         // add smooth scrolling to improve UX in small devices
         document.querySelector('#date').scrollIntoView({
