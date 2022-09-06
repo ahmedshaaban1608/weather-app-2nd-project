@@ -1,0 +1,121 @@
+* {
+    font-family: 'PT Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+/* design layout*/
+#app {
+    display: grid;
+    grid-template-areas: 'title''form''recent';
+    gap: 30px;
+    padding: 100px 10px
+}
+
+@media only screen and (min-width: 992px) {
+    #app {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 'title title title title title''form form recent recent recent';
+        padding: 100px 50px;
+    }
+}
+
+.app-title,
+.form,
+.recent {
+    background-color: rgba(27, 43, 48, 0.5);
+    border-radius: 15px;
+    padding: 25px 10px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.app-title {
+    grid-area: title;
+    text-shadow: 0 2px 5px black;
+    text-align: center;
+}
+
+.form {
+    grid-area: form;
+    
+}
+
+.recent {
+    grid-area: recent;
+    
+}
+
+
+/* styling form */
+input,
+select,
+textarea {
+    display: block;
+    margin: 5px 0 15px;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+input,
+select {
+    height: 2.5em;
+}
+
+textarea {
+    resize: none;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border: 1px solid green;
+    background-color: rgb(203, 233, 223);
+
+}
+
+#generate {
+    width: 100%;
+    line-height: 2;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    background-color: chocolate;
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s all ease;
+}
+
+#generate:hover {
+    background-color: royalblue;
+    color: white;
+    transform: scale(0.95);
+
+}
+/* styling recent data */
+#app .title {
+    font-weight: 700;
+    font-size: 20px;
+    color: lightyellow;
+    text-shadow: 0 2px 5px black;
+    margin-bottom: 20px;
+}
+
+#date,
+#city,
+#temp,
+#content {
+    display: inline-block;
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+#entryHolder {
+    font-size: 20px
+}
