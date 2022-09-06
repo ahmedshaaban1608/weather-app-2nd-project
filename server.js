@@ -25,7 +25,7 @@ app.listen(port, () => {
     console.log(`server is running on localhost:${port}`)
 })
 
-//POST request
+// POST request
 app.post('/addweather', (req, res) => {
     projectData = req.body
     res.send()
