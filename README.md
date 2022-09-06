@@ -10,9 +10,9 @@
 * [Copyright](#copyright)
 
 ## Overview
-Weather Journal App is a project that help you to search and get weather temperature using zip code in most of world countries.
+Weather Journal App is a project that helps you to search and get weather temperature using zip code in most world countries.
 
-when you click on the form button the website will send GET request to openweathermap.org and fetch wether data if found
+when you click on the form button the website will send a GET request to openweathermap.org and fetch weather data if found
 
 [back to top](#table-of-contents)
 
@@ -43,7 +43,7 @@ when you click on the form button the website will send GET request to openweath
 ### Try to use any of those values to see changes
 * country: United States and zip code: 94040
 * country: Australia and zip code: 6152
-* country: GreenLand and zip code: 3950
+* country: Greenland and zip code: 3950
 * country: Bangladesh and zip code: 1215
 * country: Pakistan and zip code: 50010
 
