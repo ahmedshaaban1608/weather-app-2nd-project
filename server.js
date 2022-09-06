@@ -25,13 +25,13 @@ app.listen(port, () => {
     console.log(`server is running on localhost:${port}`)
 })
 
+// GET request
+app.get('/all', (req, res) => {
+    res.send(projectData)
+})
+
 // POST request
 app.post('/addweather', (req, res) => {
     projectData = req.body
     res.send()
 });
-
-// GET request
-app.get('/all', (req, res) => {
-    res.send(projectData)
-})
